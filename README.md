@@ -10,7 +10,7 @@ To run the notebook without setting up a local environment, open it in [Google C
 
 1. **Classical kernels**: Feature maps, the kernel trick, and kernel-based classifiers (e.g. SVC).
 
-2. **Quantum kernels**: Encoding data with a unitary feature map \(U_\phi(x)\), fidelity overlap \(K_{ij} = |\langle\phi(x^{(i)})|\phi(x^{(j)})\rangle|^2\), and the **projected quantum kernel** (PQK) from [Huang et al., *Nature Communications* (2021)](https://www.nature.com/articles/s41467-021-22539-9.pdf) to mitigate concentration of measure for fidelity kernels.
+2. **Quantum kernels**: Encoding data with a unitary feature map, fidelity overlap , and the **projected quantum kernel** (PQK) from [Huang et al., *Nature Communications* (2021)](https://www.nature.com/articles/s41467-021-22539-9.pdf).
 
 3. **Feature maps implemented in the notebook**
    - **ZZ feature map**
@@ -43,15 +43,16 @@ Install a recent **Python 3** environment with at least:
 - `numpy`
 - `scikit-learn`
 - `matplotlib`
+- `pylatexenc`
 
-Exact versions are not pinned in this repo; align `qiskit` and `qiskit-ibm-catalog` with the [IBM Quantum / Qiskit installation guides](https://quantum.cloud.ibm.com/docs) for your platform.
+Exact versions are pinned in this repo.
 
 Example:
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-pip install qiskit qiskit-ibm-catalog numpy scikit-learn matplotlib jupyter
+pip install qiskit qiskit-ibm-catalog numpy scikit-learn matplotlib jupyter pylatexenc
 jupyter notebook quantum_kernel_tutorial_with_QESEM.ipynb
 ```
 
