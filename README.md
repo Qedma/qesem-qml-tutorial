@@ -56,6 +56,12 @@ pip install qiskit qiskit-ibm-catalog numpy scikit-learn matplotlib jupyter pyla
 jupyter notebook quantum_kernel_tutorial_with_QESEM.ipynb
 ```
 
+Working example for the dependencies:
+```bash
+pip install qiskit==2.4.1 qiskit-ibm-catalog==0.15.0 numpy==2.4.4 scikit-learn==1.8.0 matplotlib==3.10.9 pylatexenc==2.10 ipykernel
+jupyter notebook quantum_kernel_tutorial_with_QESEM.ipynb
+```
+
 ## Prerequisites for QESEM sections
 
 - IBM Quantum account and credentials accepted by the catalog channel used in the notebook (`ibm_quantum_platform` in the example).
