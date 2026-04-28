@@ -8,29 +8,29 @@ To run the notebook without setting up a local environment, open it in [Google C
 
 ## What you will learn
 
-1. **Classical kernels** — Feature maps, the kernel trick, and kernel-based classifiers (e.g. SVC).
+1. **Classical kernels**: Feature maps, the kernel trick, and kernel-based classifiers (e.g. SVC).
 
-2. **Quantum kernels** — Encoding data with a unitary feature map \(U_\phi(x)\), fidelity overlap \(K_{ij} = |\langle\phi(x^{(i)})|\phi(x^{(j)})\rangle|^2\), and the **projected quantum kernel** (PQK) from [Huang et al., *Nature Communications* (2021)](https://www.nature.com/articles/s41467-021-22539-9.pdf) to mitigate concentration of measure for fidelity kernels.
+2. **Quantum kernels**: Encoding data with a unitary feature map \(U_\phi(x)\), fidelity overlap \(K_{ij} = |\langle\phi(x^{(i)})|\phi(x^{(j)})\rangle|^2\), and the **projected quantum kernel** (PQK) from [Huang et al., *Nature Communications* (2021)](https://www.nature.com/articles/s41467-021-22539-9.pdf) to mitigate concentration of measure for fidelity kernels.
 
 3. **Feature maps implemented in the notebook**
    - **ZZ feature map**
-   - **Ising–Trotter feature map**
+   - **Ising Trotter feature map**
 
 4. **Dataset and pipeline**
 
 5. **Classical simulation**
 
 6. **Four worked combinations** (ideal kernels + SVC):
-   - Fidelity + Ising–Trotter  
-   - Projected + Ising–Trotter  
+   - Fidelity + Ising Trotter  
+   - Projected + Ising Trotter  
    - Fidelity + ZZ map  
    - Projected + ZZ map  
 
-7. **QESEM on IBM Quantum** — It covers:
-   - **Empirical time estimation** — `options={"estimate_time_only": "empirical", ...}` before a full run.
-   - **Full mitigation** — Same pattern without `estimate_time_only`, optional `max_execution_time` (seconds).
-   - **Parameterized circuits** — Batching several fidelity kernel matrix elements in one job by passing multiple parameter sets for a single transpiled template circuit.
-   - **Projected kernel** — QESEM job with Pauli-string observables for the PQK construction.
+7. **QESEM on IBM Quantum** It covers:
+   - **Empirical time estimation**: `options={"estimate_time_only": "empirical", ...}` before a full run.
+   - **Full mitigation**: Same pattern without `estimate_time_only`, optional `max_execution_time` (seconds).
+   - **Parameterized circuits**: Batching several fidelity kernel matrix elements in one job by passing multiple parameter sets for a single transpiled template circuit.
+   - **Projected kernel**: QESEM job with Pauli-string observables for the PQK construction.
 
 You must supply your **IBM Quantum API token** and **instance** where the notebook shows placeholders (`IBM_token`, `ibm_instance`).
 
