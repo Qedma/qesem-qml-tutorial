@@ -2,6 +2,10 @@
 
 This repository contains a hands-on Jupyter notebook that walks through **quantum kernel methods** for classification and shows how to estimate those kernels on (simulated) hardware using **QESEM** (Quantum Error Suppression and Error Mitigation) via the IBM Quantum platform.
 
+## Google Colab
+
+To run the notebook without setting up a local environment, open it in [Google Colab](https://colab.research.google.com/github/Qedma/qesem-qml-tutorial/blob/main/quantum_kernel_tutorial_with_QESEM.ipynb). The notebook includes a cell to install dependencies with pip; you still need IBM credentials for the QESEM sections.
+
 ## What you will learn
 
 1. **Classical kernels** — Feature maps, the kernel trick, and kernel-based classifiers (e.g. SVC).
